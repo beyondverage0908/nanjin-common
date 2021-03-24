@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sentry test</title>
+	<script src="./dist/njk.umd.js"></script>
+</head>
+<body>
+	sentry log test
+
+	<button id="btn1">点击测试sentry</button>
+	
+	<script>
+		const { sentryCenter } = NJK
+		sentryCenter.initSentry('https://40e864d11d8c4979a1dd3cba0039ac12@femonitor.eastmoney.com//25', 'prod', function() {
+			console.log('before send message callback')
+		})
+	</script>
+	<script>
+		setTimeout(function() {
+			console.log(aaa)
+		}, 1000)
+
+		setTimeout(function() {
+			const { sentryCenter } = NJK
+			sentryCenter.sendMessage({
+				extra: '测试的',
+				title: '测试的title',
+				level: 'warning'
+			}, function() {
+				console.log('send message callback')
+			})
+		}, 3000)
+
+		document.getElementById('btn1').addEventListener('click', function() {
+			sentryCenter.sendMessage({
+				extra: '测试的',
+				title: '测试的title',
+				level: 'warning'
+			})
+		}, false)
+	</script>
+</body>
+</html>
