@@ -1,3 +1,7 @@
+# Util工具集
+
+```javascript
+
 /**
  * 邮箱
  * @param {*} s
@@ -731,6 +735,7 @@ export const unique = (arr) => {
     }
 }
 
+
 /**
  * 求两个集合的并集
  */
@@ -1032,3 +1037,5 @@ export const generateUUID = () => {
     });
     return uuid;
 }
+
+```
