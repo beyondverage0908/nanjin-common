@@ -97,7 +97,7 @@ sentryCenter.initSentry(dsn, env, callback, false)
    }
    ```
 
-   3. 发送sentry日志消息
+3. 发送sentry日志消息
 
       **sendMessage([config])**
 
