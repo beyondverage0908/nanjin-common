@@ -1,21 +1,26 @@
 {
   "name": "nanjin-common",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "common library of nanjing group3 dev",
   "main": "dist/njk.umd.min.js",
   "scripts": {
-	"node": "node ./dist/njk.js",
-	"build": "umi-lib build --file njk ./src/index.js",
-	"build:test": "yarn build && cp -r dist test",
+    "node": "node ./dist/njk.js",
+    "build": "umi-lib build --file njk ./src/index.js",
+    "build:test": "yarn build && cp -r dist test",
+	"serve": "http-server test",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-	"sentry",
-	"util"
+    "sentry",
+    "util"
   ],
   "author": "lpj18607092460@163.com",
   "license": "ISC",
   "devDependencies": {
     "umi-library": "^1.6.0"
-  }
+  },
+  "dependencies": {
+    "@eastmoney/utils": "^1.1.19"
+  },
+  "peerDependencies": {}
 }

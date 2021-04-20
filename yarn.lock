@@ -1689,6 +1689,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@eastmoney/utils@^1.1.19":
+  version "1.1.19"
+  resolved "http://10.228.131.93:4873/@eastmoney%2futils/-/utils-1.1.19.tgz#c1625196cbdeeda25a0f8ce5d3c977dbba36e3a3"
+  integrity sha512-+lhjb7SgY5tfxcGcfcRQPrn60lMChPaZ0Q1ZsT84HHIau3YCwE9Gck0X3nRM67M0romplq58hZwJpwtABTxzNQ==
+
 "@emotion/is-prop-valid@^0.8.1":
   version "0.8.8"
   resolved "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
